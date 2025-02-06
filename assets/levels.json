@@ -1,0 +1,671 @@
+{
+    "levels": [
+        {
+            "number": 1,
+            "initialPlayerPosition": {
+                "x": 2,
+                "y": 2,
+                "scale": 0.5
+            },
+            "obstacles": [
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 0,
+                    "width": 16,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 0,
+                    "width": 1,
+                    "length": 16
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 15,
+                    "width": 14,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 15,
+                    "y": 0,
+                    "width": 1,
+                    "length": 14
+                },
+                {
+                    "type": "wall",
+                    "x": 3,
+                    "y": 0,
+                    "width": 1,
+                    "length": 6
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 10,
+                    "width": 6,
+                    "length": 6
+                },
+                {
+                    "type": "wall",
+                    "x": 6,
+                    "y": 3,
+                    "width": 2,
+                    "length": 13
+                },
+                {
+                    "type": "exit",
+                    "x": 14.5,
+                    "y": 14.5,
+                    "width": 1,
+                    "length": 1
+                }
+            ]
+        },
+        {
+            "number": 2,
+            "initialPlayerPosition": {
+                "x": 1,
+                "y": 1,
+                "scale": 0.5
+            },
+            "obstacles": [
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 0,
+                    "width": 16,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 0,
+                    "width": 1,
+                    "length": 16
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 15,
+                    "width": 16,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 15,
+                    "y": 0,
+                    "width": 1,
+                    "length": 16
+                },
+                {
+                    "type": "wall",
+                    "x": 5,
+                    "y": 5,
+                    "width": 6,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 5,
+                    "y": 5,
+                    "width": 1,
+                    "length": 6
+                },
+                {
+                    "type": "wall",
+                    "x": 5,
+                    "y": 10,
+                    "width": 6,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 10,
+                    "y": 5,
+                    "width": 1,
+                    "length": 6
+                },
+                {
+                    "type": "exit",
+                    "x": 14.5,
+                    "y": 14.5,
+                    "width": 1,
+                    "length": 1
+                }
+            ]
+        },
+        {
+            "number": 3,
+            "initialPlayerPosition": {
+                "x": 1,
+                "y": 1,
+                "scale": 0.5
+            },
+            "obstacles": [
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 0,
+                    "width": 16,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 0,
+                    "width": 1,
+                    "length": 16
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 15,
+                    "width": 16,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 15,
+                    "y": 0,
+                    "width": 1,
+                    "length": 16
+                },
+                {
+                    "type": "wall",
+                    "x": 6,
+                    "y": 6,
+                    "width": 3,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 6,
+                    "y": 6,
+                    "width": 1,
+                    "length": 3
+                },
+                {
+                    "type": "wall",
+                    "x": 6,
+                    "y": 9,
+                    "width": 3,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 9,
+                    "y": 6,
+                    "width": 1,
+                    "length": 3
+                },
+                {
+                    "type": "exit",
+                    "x": 14.5,
+                    "y": 14.5,
+                    "width": 1,
+                    "length": 1
+                }
+            ]
+        },
+        {
+            "number": 4,
+            "initialPlayerPosition": {
+                "x": 2,
+                "y": 2,
+                "scale": 0.5
+            },
+            "obstacles": [
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 0,
+                    "width": 16,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 0,
+                    "width": 1,
+                    "length": 16
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 15,
+                    "width": 16,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 15,
+                    "y": 0,
+                    "width": 1,
+                    "length": 16
+                },
+                {
+                    "type": "wall",
+                    "x": 8,
+                    "y": 0,
+                    "width": 1,
+                    "length": 16
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 8,
+                    "width": 16,
+                    "length": 1
+                },
+                {
+                    "type": "exit",
+                    "x": 14.5,
+                    "y": 14.5,
+                    "width": 1,
+                    "length": 1
+                }
+            ]
+        },
+        {
+            "number": 5,
+            "initialPlayerPosition": {
+                "x": 3,
+                "y": 3,
+                "scale": 0.5
+            },
+            "obstacles": [
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 0,
+                    "width": 16,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 0,
+                    "width": 1,
+                    "length": 16
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 15,
+                    "width": 16,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 15,
+                    "y": 0,
+                    "width": 1,
+                    "length": 16
+                },
+                {
+                    "type": "wall",
+                    "x": 5,
+                    "y": 5,
+                    "width": 6,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 5,
+                    "y": 5,
+                    "width": 1,
+                    "length": 6
+                },
+                {
+                    "type": "wall",
+                    "x": 5,
+                    "y": 10,
+                    "width": 6,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 10,
+                    "y": 5,
+                    "width": 1,
+                    "length": 6
+                },
+                {
+                    "type": "exit",
+                    "x": 14.5,
+                    "y": 14.5,
+                    "width": 1,
+                    "length": 1
+                }
+            ]
+        },
+        {
+            "number": 6,
+            "initialPlayerPosition": {
+                "x": 4,
+                "y": 4,
+                "scale": 0.5
+            },
+            "obstacles": [
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 0,
+                    "width": 16,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 0,
+                    "width": 1,
+                    "length": 16
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 15,
+                    "width": 16,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 15,
+                    "y": 0,
+                    "width": 1,
+                    "length": 16
+                },
+                {
+                    "type": "wall",
+                    "x": 8,
+                    "y": 0,
+                    "width": 1,
+                    "length": 16
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 8,
+                    "width": 16,
+                    "length": 1
+                },
+                {
+                    "type": "exit",
+                    "x": 14.5,
+                    "y": 14.5,
+                    "width": 1,
+                    "length": 1
+                }
+            ]
+        },
+        {
+            "number": 7,
+            "initialPlayerPosition": {
+                "x": 5,
+                "y": 5,
+                "scale": 0.5
+            },
+            "obstacles": [
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 0,
+                    "width": 16,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 0,
+                    "width": 1,
+                    "length": 16
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 15,
+                    "width": 16,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 15,
+                    "y": 0,
+                    "width": 1,
+                    "length": 16
+                },
+                {
+                    "type": "wall",
+                    "x": 5,
+                    "y": 5,
+                    "width": 6,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 5,
+                    "y": 5,
+                    "width": 1,
+                    "length": 6
+                },
+                {
+                    "type": "wall",
+                    "x": 5,
+                    "y": 10,
+                    "width": 6,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 10,
+                    "y": 5,
+                    "width": 1,
+                    "length": 6
+                },
+                {
+                    "type": "exit",
+                    "x": 14.5,
+                    "y": 14.5,
+                    "width": 1,
+                    "length": 1
+                }
+            ]
+        },
+        {
+            "number": 8,
+            "initialPlayerPosition": {
+                "x": 6,
+                "y": 6,
+                "scale": 0.5
+            },
+            "obstacles": [
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 0,
+                    "width": 16,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 0,
+                    "width": 1,
+                    "length": 16
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 15,
+                    "width": 16,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 15,
+                    "y": 0,
+                    "width": 1,
+                    "length": 16
+                },
+                {
+                    "type": "wall",
+                    "x": 8,
+                    "y": 0,
+                    "width": 1,
+                    "length": 16
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 8,
+                    "width": 16,
+                    "length": 1
+                },
+                {
+                    "type": "exit",
+                    "x": 14.5,
+                    "y": 14.5,
+                    "width": 1,
+                    "length": 1
+                }
+            ]
+        },
+        {
+            "number": 9,
+            "initialPlayerPosition": {
+                "x": 7,
+                "y": 7,
+                "scale": 0.5
+            },
+            "obstacles": [
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 0,
+                    "width": 16,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 0,
+                    "width": 1,
+                    "length": 16
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 15,
+                    "width": 16,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 15,
+                    "y": 0,
+                    "width": 1,
+                    "length": 16
+                },
+                {
+                    "type": "wall",
+                    "x": 5,
+                    "y": 5,
+                    "width": 6,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 5,
+                    "y": 5,
+                    "width": 1,
+                    "length": 6
+                },
+                {
+                    "type": "wall",
+                    "x": 5,
+                    "y": 10,
+                    "width": 6,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 10,
+                    "y": 5,
+                    "width": 1,
+                    "length": 6
+                },
+                {
+                    "type": "exit",
+                    "x": 14.5,
+                    "y": 14.5,
+                    "width": 1,
+                    "length": 1
+                }
+            ]
+        },
+        {
+            "number": 10,
+            "initialPlayerPosition": {
+                "x": 8,
+                "y": 8,
+                "scale": 0.5
+            },
+            "obstacles": [
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 0,
+                    "width": 16,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 0,
+                    "width": 1,
+                    "length": 16
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 15,
+                    "width": 16,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 15,
+                    "y": 0,
+                    "width": 1,
+                    "length": 16
+                },
+                {
+                    "type": "wall",
+                    "x": 8,
+                    "y": 0,
+                    "width": 1,
+                    "length": 16
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 8,
+                    "width": 16,
+                    "length": 1
+                },
+                {
+                    "type": "exit",
+                    "x": 14.5,
+                    "y": 14.5,
+                    "width": 1,
+                    "length": 1
+                }
+            ]
+        }
+    ]
+}

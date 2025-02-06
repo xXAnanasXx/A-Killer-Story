@@ -13,3 +13,28 @@ html {
 #myCanvas:hover {
     cursor: none;
 }
+
+#gui {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#gui div {
+    margin: 0 10px;
+}
+
+#level, #score, #timer {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #444;
+}

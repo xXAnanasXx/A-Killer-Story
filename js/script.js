@@ -8,6 +8,10 @@ async function init() {
    // On recupère le canvas
    let canvas = document.querySelector("#myCanvas");
 
+   // On définit la taille du canvas
+    canvas.width = 800;
+    canvas.height = 800;
+
    // On cree une instance du jeu
     let game = new Game(canvas);
     // ici on utilise await car la méthode init est asynchrone

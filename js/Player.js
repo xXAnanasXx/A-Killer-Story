@@ -229,4 +229,12 @@ export default class Player extends ObjectGraphique {
         this.x += this.vitesseX;
         this.y += this.vitesseY;
     }
+
+    respawn(x, y, ratio = this.ratio) {
+        this.x = x;
+        this.y = y;
+        this.vitesseX = 0;
+        this.vitesseY = 0;
+        this.ratio = ratio;
+    }
 }

@@ -36,6 +36,12 @@ export default class Obstacle extends ObjectGraphique {
             case "void":
                 couleur = "black";
                 break;
+            case "exit":
+                couleur = "green";
+                break;
+            case "victim":
+                couleur = "pink";
+                break;
             default:
                 break;
         }
