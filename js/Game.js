@@ -18,16 +18,19 @@ export default class Game {
 
         this.gridRatio = 50;
 
-        this.levelNumber = 1;
+        this.levelNumber = 8;
         this.levelFinished = false;
         this.hasMoved = false;
         this.scoreboard = [];
         this.levelsData = null;
         this.timerRunning = false;
+
         this.currentLevel = null;
+        this.totalVictims = 0;
+        this.nbVictims = 0;
     }
 
-    async init(canvas) {
+    async init() {
         this.ctx = this.canvas.getContext("2d");
 
         // Load levels data
@@ -43,7 +46,7 @@ export default class Game {
         this.scoreboardElement = document.getElementById("scoreboard");
 
         // On charge le premier niveau       
-        this.loadMap(this.levelNumber);        
+        this.loadMap(this.levelNumber);
 
         // On initialise les écouteurs de touches, souris, etc.
         initListeners(this.inputStates, this.canvas);
@@ -64,7 +67,7 @@ export default class Game {
         }
     }
 
-    loadMap(numMap) {
+    loadMap(numMap, resetTimer = true) {
         if (!this.levelsData) {
             console.error('Levels data not loaded');
             return;
@@ -72,6 +75,8 @@ export default class Game {
 
         let level = this.levelsData.find(level => level.number === numMap);
         this.currentLevel = level;
+        this.totalVictims = this.totalVictimsInLevel();
+        this.nbVictims = 0;
         if (!level) {
             console.error(`Level ${numMap} not found`);
             return;
@@ -99,9 +104,11 @@ export default class Game {
         this.updateLevel(numMap);
 
         this.levelFinished = false;
-        this.hasMoved = false;
-        this.timerRunning = false;
-        this.timerElement.textContent = `Time: 0`;
+        if (resetTimer) {
+            this.hasMoved = false;
+            this.timerRunning = false;
+            this.timerElement.textContent = `Time: 0`;
+        }
 
         // Update the scoreboard
         this.updateScoreboard();
@@ -138,12 +145,12 @@ export default class Game {
     }
 
     startTimer() {
-        if (!this.hasMoved){
+        if (!this.hasMoved) {
             this.hasMoved = true;
             this.startTime = Date.now();
             this.timerRunning = true;
             this.updateTimer();
-        }        
+        }
     }
 
     updateTimer() {
@@ -271,7 +278,7 @@ export default class Game {
                         case "lava":
                         case "void":
                             // Respawn the player
-                            this.player.respawn(this.currentLevel.initialPlayerPosition.x * this.gridRatio, this.currentLevel.initialPlayerPosition.y * this.gridRatio, this.currentLevel.initialPlayerPosition.scale);
+                            this.loadMap(this.levelNumber, false);
                             break;
                         case "mud":
                             // Slow down the player
@@ -281,10 +288,16 @@ export default class Game {
                             // Speed up the player
                             this.speedModifier = 1.5;
                             break;
+                        case "victim":
+                            // Replace the victim with a corpse
+                            const corpse = new Obstacle(obj.x, obj.y, obj.w, obj.h, "corpse");
+                            this.objetsGraphiques = this.objetsGraphiques.map(o => o === obj ? corpse : o);
+                            this.nbVictims++;
+                            break;
                         case "exit":
                             // Load next level
-                            if (!this.levelFinished) {
-                                this.levelFinished = true;                                
+                            if (!this.levelFinished && this.nbVictims === this.totalVictims) {
+                                this.levelFinished = true;
                                 this.saveHighScore(this.levelNumber - 1, Math.floor((Date.now() - this.startTime) / 1000));
                                 this.levelNumber = this.levelNumber == this.scoreboard.length ? 1 : this.levelNumber + 1;
                                 this.loadMap(this.levelNumber);
@@ -309,8 +322,8 @@ export default class Game {
             return;
         }
 
-        for(let i = 0; i < this.levelsData.length; i++) {            
-            this.scoreboard.push({level: i+1, score: null});
+        for (let i = 0; i < this.levelsData.length; i++) {
+            this.scoreboard.push({ level: i + 1, score: null });
         }
 
         this.updateScoreboard();
@@ -318,7 +331,7 @@ export default class Game {
 
     saveHighScore(level, score) {
         console.log(`Level ${level} completed in ${score}s`);
-        
+
         if (!this.scoreboard[level].score || score < this.scoreboard[level].score) {
             this.scoreboard[level].score = score;
             localStorage.setItem('scoreboard', JSON.stringify(this.scoreboard));
@@ -327,8 +340,8 @@ export default class Game {
 
     updateScoreboard() {
         this.scoreboardElement.innerHTML = '';
-        
-        this.scoreboard.forEach(level => {              
+
+        this.scoreboard.forEach(level => {
             const li = document.createElement('li');
             let score = level.score ? `${level.score}s` : 'N/A';
             li.textContent = `Level ${level.level}: ${score}`;
@@ -338,5 +351,15 @@ export default class Game {
             });
             this.scoreboardElement.appendChild(li);
         });
+    }
+
+    totalVictimsInLevel() {
+        let total = 0;
+        this.currentLevel.obstacles.forEach(obstacleData => {
+            if (obstacleData.type === Obstacle.Types.VICTIM) {
+                total++;
+            }
+        });
+        return total;
     }
 }

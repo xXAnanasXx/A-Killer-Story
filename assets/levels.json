@@ -32,9 +32,9 @@
                 {
                     "type": "wall",
                     "x": 0,
-                    "y": 10,
+                    "y": 8,
                     "width": 6,
-                    "length": 6
+                    "length": 8
                 },
                 {
                     "type": "wall",
@@ -42,6 +42,41 @@
                     "y": 3,
                     "width": 2,
                     "length": 13
+                },
+                {
+                    "type": "void",
+                    "x": 1.5,
+                    "y": 9,
+                    "width": 1.5,
+                    "length": 1.5
+                },
+                {
+                    "type": "void",
+                    "x": 4.5,
+                    "y": 9,
+                    "width": 1.5,
+                    "length": 1.5
+                },
+                {
+                    "type": "void",
+                    "x": 3,
+                    "y": 10.5,
+                    "width": 1.5,
+                    "length": 2.25
+                },
+                {
+                    "type": "void",
+                    "x": 2.25,
+                    "y": 11.25,
+                    "width": 0.75,
+                    "length": 2.25
+                },
+                {
+                    "type": "void",
+                    "x": 4.5,
+                    "y": 11.25,
+                    "width": 0.75,
+                    "length": 2.25
                 },
                 {
                     "type": "water",
@@ -115,6 +150,13 @@
                     "y": 5,
                     "width": 6,
                     "length": 6
+                },                
+                {
+                    "type": "lava",
+                    "x": 6,
+                    "y": 6,
+                    "width": 4,
+                    "length": 4
                 },
                 {
                     "type": "exit",
@@ -132,7 +174,49 @@
                 "y": 11,
                 "scale": 0.5
             },
-            "obstacles": [
+            "obstacles": [                
+                {
+                    "type": "water",
+                    "x": 8,
+                    "y": 0,
+                    "width": 6,
+                    "length": 2
+                },
+                {
+                    "type": "water",
+                    "x": 12,
+                    "y": 12,
+                    "width": 4,
+                    "length": 4
+                },
+                {
+                    "type": "water",
+                    "x": 10,
+                    "y": 14,
+                    "width": 4,
+                    "length": 4
+                },
+                {
+                    "type": "water",
+                    "x": 14,
+                    "y": 10,
+                    "width": 4,
+                    "length": 4
+                },
+                {
+                    "type": "water",
+                    "x": 0,
+                    "y": 3,
+                    "width": 1,
+                    "length": 6
+                },
+                {
+                    "type": "water",
+                    "x": 0,
+                    "y": 3,
+                    "width": 3,
+                    "length": 4
+                },
                 {
                     "type": "wall",
                     "x": 0,
@@ -549,6 +633,41 @@
                     "length": 1
                 },
                 {
+                    "type": "victim",
+                    "x": 12.5,
+                    "y": 9,
+                    "width": 1,
+                    "length": 1
+                },
+                {
+                    "type": "victim",
+                    "x": 11,
+                    "y": 2.5,
+                    "width": 1,
+                    "length": 1
+                },
+                {
+                    "type": "victim",
+                    "x": 0.5,
+                    "y": 6,
+                    "width": 1,
+                    "length": 1
+                },
+                {
+                    "type": "victim",
+                    "x": 2.5,
+                    "y": 6,
+                    "width": 1,
+                    "length": 1
+                },
+                {
+                    "type": "victim",
+                    "x": 1.25,
+                    "y": 4,
+                    "width": 1.5,
+                    "length": 1.5
+                },
+                {
                     "type": "exit",
                     "x": 7.5,
                     "y": 1,
@@ -685,14 +804,14 @@
                     "x": 13,
                     "y": 13,
                     "width": 2,
-                    "length": 2
+                    "length": 3
                 },
                 {
                     "type": "lava",
-                    "x": 5,
-                    "y": 5,
+                    "x": 4,
+                    "y": 4,
                     "width": 2,
-                    "length": 2
+                    "length": 2.5
                 },
                 {
                     "type": "lava",
