@@ -9,3 +9,7 @@ html {
     margin-left: auto;
     margin-right: auto;
 }
+
+#myCanvas:hover {
+    cursor: none;
+}
