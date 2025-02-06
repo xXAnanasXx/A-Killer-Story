@@ -18,7 +18,7 @@ export default class Game {
 
         this.gridRatio = 50;
 
-        this.levelNumber = 8;
+        this.levelNumber = 1;
         this.levelFinished = false;
         this.hasMoved = false;
         this.scoreboard = [];

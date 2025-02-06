@@ -18,6 +18,7 @@ A-Killer-Story is a web-based project showing the normal life of a killer.
 
 ## Web server
 To play without any contraints go to my web server hosting my game [A-Killer-Story](https://a-killer-story.vercel.app/)
+If the canvas is oversized, don't hesitate to reduce the global window size.
 
 ## Local Installation
 To install and run the project locally, follow these steps:
