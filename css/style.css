@@ -2,12 +2,19 @@ html {
     background-color: #f0f0f0;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 #myCanvas {
     border: 1px solid black;
     background-color: rgb(243, 245, 235);
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
 }
 
 #myCanvas:hover {
@@ -27,14 +34,61 @@ html {
     top: 0;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }
 
 #gui div {
     margin: 0 10px;
 }
 
-#level, #score, #timer {
+#level, #timer {
     padding: 5px 10px;
     border-radius: 5px;
     background-color: #444;
+}
+
+#title {
+    font-size: 24px;
+    font-family: 'Creepster', cursive;
+    text-shadow: 0 4px 4px rgb(235, 19, 19);
+    background: linear-gradient(180deg, white, white, white, red);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#sidebar {
+    position: fixed;
+    top: 60px; /* Adjust based on the height of the GUI */
+    left: 0;
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    height: calc(100% - 60px); /* Adjust based on the height of the GUI */
+    overflow-y: auto;
+}
+
+#sidebar h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#scoreboard {
+    list-style-type: none;
+    padding: 0;
+}
+
+#scoreboard li {
+    padding: 5px;
+    background-color: #444;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#scoreboard li:hover {
+    background-color: #555;
 }
