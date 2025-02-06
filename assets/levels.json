@@ -12,7 +12,7 @@
                     "type": "wall",
                     "x": 0,
                     "y": 0,
-                    "width": 16,
+                    "width": 8,
                     "length": 1
                 },
                 {
@@ -21,20 +21,6 @@
                     "y": 0,
                     "width": 1,
                     "length": 16
-                },
-                {
-                    "type": "wall",
-                    "x": 0,
-                    "y": 15,
-                    "width": 14,
-                    "length": 1
-                },
-                {
-                    "type": "wall",
-                    "x": 15,
-                    "y": 0,
-                    "width": 1,
-                    "length": 14
                 },
                 {
                     "type": "wall",
@@ -58,6 +44,27 @@
                     "length": 13
                 },
                 {
+                    "type": "water",
+                    "x": 8,
+                    "y": 3,
+                    "width": 2,
+                    "length": 13
+                },
+                {
+                    "type": "water",
+                    "x": 10,
+                    "y": 7,
+                    "width": 2,
+                    "length": 9
+                },
+                {
+                    "type": "water",
+                    "x": 8,
+                    "y": 0,
+                    "width": 4,
+                    "length": 1
+                },
+                {
                     "type": "exit",
                     "x": 14.5,
                     "y": 14.5,
@@ -69,71 +76,50 @@
         {
             "number": 2,
             "initialPlayerPosition": {
-                "x": 1,
+                "x": 2,
                 "y": 1,
                 "scale": 0.5
             },
             "obstacles": [
                 {
                     "type": "wall",
-                    "x": 0,
-                    "y": 0,
-                    "width": 16,
-                    "length": 1
+                    "x": 7,
+                    "y": 2,
+                    "width": 2,
+                    "length": 4
                 },
                 {
                     "type": "wall",
-                    "x": 0,
-                    "y": 0,
-                    "width": 1,
-                    "length": 16
+                    "x": 2,
+                    "y": 7,
+                    "width": 4,
+                    "length": 2
                 },
                 {
                     "type": "wall",
-                    "x": 0,
-                    "y": 15,
-                    "width": 16,
-                    "length": 1
-                },
-                {
-                    "type": "wall",
-                    "x": 15,
-                    "y": 0,
-                    "width": 1,
-                    "length": 16
-                },
-                {
-                    "type": "wall",
-                    "x": 5,
-                    "y": 5,
-                    "width": 6,
-                    "length": 1
-                },
-                {
-                    "type": "wall",
-                    "x": 5,
-                    "y": 5,
-                    "width": 1,
-                    "length": 6
-                },
-                {
-                    "type": "wall",
-                    "x": 5,
+                    "x": 7,
                     "y": 10,
-                    "width": 6,
-                    "length": 1
+                    "width": 2,
+                    "length": 4
                 },
                 {
                     "type": "wall",
                     "x": 10,
+                    "y": 7,
+                    "width": 4,
+                    "length": 2
+                },
+                {
+                    "type": "wall",
+                    "x": 5,
                     "y": 5,
-                    "width": 1,
+                    "width": 6,
                     "length": 6
                 },
                 {
                     "type": "exit",
-                    "x": 14.5,
-                    "y": 14.5,
+                    "x": 9.5,
+                    "y": 11.5,
                     "width": 1,
                     "length": 1
                 }
@@ -142,38 +128,80 @@
         {
             "number": 3,
             "initialPlayerPosition": {
-                "x": 1,
-                "y": 1,
+                "x": 1.5,
+                "y": 11,
                 "scale": 0.5
             },
             "obstacles": [
                 {
                     "type": "wall",
                     "x": 0,
-                    "y": 0,
-                    "width": 16,
-                    "length": 1
+                    "y": 14,
+                    "width": 2,
+                    "length": 2
                 },
                 {
                     "type": "wall",
-                    "x": 0,
-                    "y": 0,
-                    "width": 1,
-                    "length": 16
+                    "x": 1,
+                    "y": 13,
+                    "width": 2,
+                    "length": 2
                 },
                 {
                     "type": "wall",
-                    "x": 0,
-                    "y": 15,
-                    "width": 16,
-                    "length": 1
+                    "x": 2,
+                    "y": 12,
+                    "width": 2,
+                    "length": 2
                 },
                 {
                     "type": "wall",
-                    "x": 15,
+                    "x": 3,
+                    "y": 11,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "wall",
+                    "x": 4,
+                    "y": 10,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "wall",
+                    "x": 5,
+                    "y": 9,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "wall",
+                    "x": 9,
+                    "y": 5,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "wall",
+                    "x": 12,
+                    "y": 2,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "wall",
+                    "x": 13,
+                    "y": 1,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "wall",
+                    "x": 14,
                     "y": 0,
-                    "width": 1,
-                    "length": 16
+                    "width": 2,
+                    "length": 2
                 },
                 {
                     "type": "wall",
@@ -204,9 +232,23 @@
                     "length": 3
                 },
                 {
+                    "type": "victim",
+                    "x": 12.5,
+                    "y": 5.5,
+                    "width": 1,
+                    "length": 1
+                },
+                {
+                    "type": "victim",
+                    "x": 7,
+                    "y": 13,
+                    "width": 1,
+                    "length": 1
+                },
+                {
                     "type": "exit",
-                    "x": 14.5,
-                    "y": 14.5,
+                    "x": 1,
+                    "y": 1,
                     "width": 1,
                     "length": 1
                 }
@@ -249,23 +291,93 @@
                     "length": 16
                 },
                 {
+                    "type": "mud",
+                    "x": 1,
+                    "y": 5,
+                    "width": 4,
+                    "length": 6
+                },
+                {
+                    "type": "mud",
+                    "x": 9,
+                    "y": 5,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "wall",
+                    "x": 4,
+                    "y": 3,
+                    "width": 1,
+                    "length": 3
+                },
+                {
+                    "type": "wall",
+                    "x": 4,
+                    "y": 8,
+                    "width": 1,
+                    "length": 4
+                },
+                {
                     "type": "wall",
                     "x": 8,
                     "y": 0,
                     "width": 1,
-                    "length": 16
+                    "length": 9
+                },
+                {
+                    "type": "water",
+                    "x": 11,
+                    "y": 4,
+                    "width": 2,
+                    "length": 4
+                },
+                {
+                    "type": "water",
+                    "x": 12,
+                    "y": 12,
+                    "width": 1,
+                    "length": 3
                 },
                 {
                     "type": "wall",
                     "x": 0,
+                    "y": 4,
+                    "width": 4,
+                    "length": 1
+                },
+                {
+                    "type": "water",
+                    "x": 11,
                     "y": 8,
-                    "width": 16,
+                    "width": 4,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 4,
+                    "y": 12,
+                    "width": 5,
+                    "length": 1
+                },
+                {
+                    "type": "victim",
+                    "x": 2,
+                    "y": 12.5,
+                    "width": 1,
+                    "length": 1
+                },
+                {
+                    "type": "victim",
+                    "x": 13.5,
+                    "y": 6.5,
+                    "width": 1,
                     "length": 1
                 },
                 {
                     "type": "exit",
-                    "x": 14.5,
-                    "y": 14.5,
+                    "x": 13.5,
+                    "y": 13.5,
                     "width": 1,
                     "length": 1
                 }
@@ -274,344 +386,7 @@
         {
             "number": 5,
             "initialPlayerPosition": {
-                "x": 3,
-                "y": 3,
-                "scale": 0.5
-            },
-            "obstacles": [
-                {
-                    "type": "wall",
-                    "x": 0,
-                    "y": 0,
-                    "width": 16,
-                    "length": 1
-                },
-                {
-                    "type": "wall",
-                    "x": 0,
-                    "y": 0,
-                    "width": 1,
-                    "length": 16
-                },
-                {
-                    "type": "wall",
-                    "x": 0,
-                    "y": 15,
-                    "width": 16,
-                    "length": 1
-                },
-                {
-                    "type": "wall",
-                    "x": 15,
-                    "y": 0,
-                    "width": 1,
-                    "length": 16
-                },
-                {
-                    "type": "wall",
-                    "x": 5,
-                    "y": 5,
-                    "width": 6,
-                    "length": 1
-                },
-                {
-                    "type": "wall",
-                    "x": 5,
-                    "y": 5,
-                    "width": 1,
-                    "length": 6
-                },
-                {
-                    "type": "wall",
-                    "x": 5,
-                    "y": 10,
-                    "width": 6,
-                    "length": 1
-                },
-                {
-                    "type": "wall",
-                    "x": 10,
-                    "y": 5,
-                    "width": 1,
-                    "length": 6
-                },
-                {
-                    "type": "exit",
-                    "x": 14.5,
-                    "y": 14.5,
-                    "width": 1,
-                    "length": 1
-                }
-            ]
-        },
-        {
-            "number": 6,
-            "initialPlayerPosition": {
-                "x": 4,
-                "y": 4,
-                "scale": 0.5
-            },
-            "obstacles": [
-                {
-                    "type": "wall",
-                    "x": 0,
-                    "y": 0,
-                    "width": 16,
-                    "length": 1
-                },
-                {
-                    "type": "wall",
-                    "x": 0,
-                    "y": 0,
-                    "width": 1,
-                    "length": 16
-                },
-                {
-                    "type": "wall",
-                    "x": 0,
-                    "y": 15,
-                    "width": 16,
-                    "length": 1
-                },
-                {
-                    "type": "wall",
-                    "x": 15,
-                    "y": 0,
-                    "width": 1,
-                    "length": 16
-                },
-                {
-                    "type": "wall",
-                    "x": 8,
-                    "y": 0,
-                    "width": 1,
-                    "length": 16
-                },
-                {
-                    "type": "wall",
-                    "x": 0,
-                    "y": 8,
-                    "width": 16,
-                    "length": 1
-                },
-                {
-                    "type": "exit",
-                    "x": 14.5,
-                    "y": 14.5,
-                    "width": 1,
-                    "length": 1
-                }
-            ]
-        },
-        {
-            "number": 7,
-            "initialPlayerPosition": {
                 "x": 5,
-                "y": 5,
-                "scale": 0.5
-            },
-            "obstacles": [
-                {
-                    "type": "wall",
-                    "x": 0,
-                    "y": 0,
-                    "width": 16,
-                    "length": 1
-                },
-                {
-                    "type": "wall",
-                    "x": 0,
-                    "y": 0,
-                    "width": 1,
-                    "length": 16
-                },
-                {
-                    "type": "wall",
-                    "x": 0,
-                    "y": 15,
-                    "width": 16,
-                    "length": 1
-                },
-                {
-                    "type": "wall",
-                    "x": 15,
-                    "y": 0,
-                    "width": 1,
-                    "length": 16
-                },
-                {
-                    "type": "wall",
-                    "x": 5,
-                    "y": 5,
-                    "width": 6,
-                    "length": 1
-                },
-                {
-                    "type": "wall",
-                    "x": 5,
-                    "y": 5,
-                    "width": 1,
-                    "length": 6
-                },
-                {
-                    "type": "wall",
-                    "x": 5,
-                    "y": 10,
-                    "width": 6,
-                    "length": 1
-                },
-                {
-                    "type": "wall",
-                    "x": 10,
-                    "y": 5,
-                    "width": 1,
-                    "length": 6
-                },
-                {
-                    "type": "exit",
-                    "x": 14.5,
-                    "y": 14.5,
-                    "width": 1,
-                    "length": 1
-                }
-            ]
-        },
-        {
-            "number": 8,
-            "initialPlayerPosition": {
-                "x": 6,
-                "y": 6,
-                "scale": 0.5
-            },
-            "obstacles": [
-                {
-                    "type": "wall",
-                    "x": 0,
-                    "y": 0,
-                    "width": 16,
-                    "length": 1
-                },
-                {
-                    "type": "wall",
-                    "x": 0,
-                    "y": 0,
-                    "width": 1,
-                    "length": 16
-                },
-                {
-                    "type": "wall",
-                    "x": 0,
-                    "y": 15,
-                    "width": 16,
-                    "length": 1
-                },
-                {
-                    "type": "wall",
-                    "x": 15,
-                    "y": 0,
-                    "width": 1,
-                    "length": 16
-                },
-                {
-                    "type": "wall",
-                    "x": 8,
-                    "y": 0,
-                    "width": 1,
-                    "length": 16
-                },
-                {
-                    "type": "wall",
-                    "x": 0,
-                    "y": 8,
-                    "width": 16,
-                    "length": 1
-                },
-                {
-                    "type": "exit",
-                    "x": 14.5,
-                    "y": 14.5,
-                    "width": 1,
-                    "length": 1
-                }
-            ]
-        },
-        {
-            "number": 9,
-            "initialPlayerPosition": {
-                "x": 7,
-                "y": 7,
-                "scale": 0.5
-            },
-            "obstacles": [
-                {
-                    "type": "wall",
-                    "x": 0,
-                    "y": 0,
-                    "width": 16,
-                    "length": 1
-                },
-                {
-                    "type": "wall",
-                    "x": 0,
-                    "y": 0,
-                    "width": 1,
-                    "length": 16
-                },
-                {
-                    "type": "wall",
-                    "x": 0,
-                    "y": 15,
-                    "width": 16,
-                    "length": 1
-                },
-                {
-                    "type": "wall",
-                    "x": 15,
-                    "y": 0,
-                    "width": 1,
-                    "length": 16
-                },
-                {
-                    "type": "wall",
-                    "x": 5,
-                    "y": 5,
-                    "width": 6,
-                    "length": 1
-                },
-                {
-                    "type": "wall",
-                    "x": 5,
-                    "y": 5,
-                    "width": 1,
-                    "length": 6
-                },
-                {
-                    "type": "wall",
-                    "x": 5,
-                    "y": 10,
-                    "width": 6,
-                    "length": 1
-                },
-                {
-                    "type": "wall",
-                    "x": 10,
-                    "y": 5,
-                    "width": 1,
-                    "length": 6
-                },
-                {
-                    "type": "exit",
-                    "x": 14.5,
-                    "y": 14.5,
-                    "width": 1,
-                    "length": 1
-                }
-            ]
-        },
-        {
-            "number": 10,
-            "initialPlayerPosition": {
-                "x": 8,
                 "y": 8,
                 "scale": 0.5
             },
@@ -646,22 +421,688 @@
                 },
                 {
                     "type": "wall",
+                    "x": 5,
+                    "y": 5,
+                    "width": 6,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 5,
+                    "y": 5,
+                    "width": 1,
+                    "length": 2
+                },
+                {
+                    "type": "wall",
+                    "x": 5,
+                    "y": 9,
+                    "width": 1,
+                    "length": 2
+                },
+                {
+                    "type": "wall",
+                    "x": 5,
+                    "y": 10,
+                    "width": 6,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 10,
+                    "y": 5,
+                    "width": 1,
+                    "length": 6
+                },
+                {
+                    "type": "mud",
+                    "x": 1,
+                    "y": 1,
+                    "width": 4,
+                    "length": 4
+                },
+                {
+                    "type": "mud",
+                    "x": 11,
+                    "y": 11,
+                    "width": 4,
+                    "length": 4
+                },
+                {
+                    "type": "mud",
+                    "x": 1,
+                    "y": 11,
+                    "width": 4,
+                    "length": 4
+                },
+                {
+                    "type": "mud",
+                    "x": 11,
+                    "y": 1,
+                    "width": 4,
+                    "length": 4
+                },
+                {
+                    "type": "victim",
+                    "x": 12.5,
+                    "y": 7.5,
+                    "width": 1,
+                    "length": 1
+                },
+                {
+                    "type": "exit",
+                    "x": 7.5,
+                    "y": 7.5,
+                    "width": 1,
+                    "length": 1
+                }
+            ]
+        },
+        {
+            "number": 6,
+            "initialPlayerPosition": {
+                "x": 2.5,
+                "y": 13.5,
+                "scale": 0.5
+            },
+            "obstacles": [
+                {
+                    "type": "wall",
+                    "x": 4,
+                    "y": 4,
+                    "width": 8,
+                    "length": 8
+                },
+                {
+                    "type": "lava",
+                    "x": 4,
+                    "y": 5,
+                    "width": 8,
+                    "length": 6
+                },
+                {
+                    "type": "lava",
+                    "x": 5,
+                    "y": 4,
+                    "width": 6,
+                    "length": 8
+                },
+                {
+                    "type": "wall",
+                    "x": 6.5,
+                    "y": 6.5,
+                    "width": 3,
+                    "length": 3
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 7.25,
+                    "width": 7,
+                    "length": 1.5
+                },
+                {
+                    "type": "victim",
+                    "x": 14.5,
+                    "y": 14.5,
+                    "width": 1,
+                    "length": 1
+                },
+                {
+                    "type": "exit",
+                    "x": 7.5,
+                    "y": 1,
+                    "width": 1,
+                    "length": 1
+                }
+            ]
+        },
+        {
+            "number": 7,
+            "initialPlayerPosition": {
+                "x": 5,
+                "y": 5,
+                "scale": 0.5
+            },
+            "obstacles": [
+                {
+                    "type": "lava",
+                    "x": 0,
+                    "y": 0,
+                    "width": 4,
+                    "length": 4
+                },
+                {
+                    "type": "lava",
+                    "x": 12,
+                    "y": 0,
+                    "width": 4,
+                    "length": 4
+                },
+                {
+                    "type": "lava",
+                    "x": 0,
+                    "y": 12,
+                    "width": 4,
+                    "length": 4
+                },
+                {
+                    "type": "lava",
+                    "x": 12,
+                    "y": 12,
+                    "width": 4,
+                    "length": 4
+                },
+                {
+                    "type": "lava",
+                    "x": 6.5,
+                    "y": 2,
+                    "width": 3,
+                    "length": 12
+                },
+                {
+                    "type": "lava",
+                    "x": 2,
+                    "y": 6.5,
+                    "width": 12,
+                    "length": 3
+                },
+                {
+                    "type": "exit",
+                    "x": 10.5,
+                    "y": 10.5,
+                    "width": 1,
+                    "length": 1
+                }
+            ]
+        },
+        {
+            "number": 8,
+            "initialPlayerPosition": {
+                "x": 7,
+                "y": 2,
+                "scale": 0.5
+            },
+            "obstacles": [
+                {
+                    "type": "ice",
+                    "x": 0,
+                    "y": 0,
+                    "width": 16,
+                    "length": 16
+                },
+                {
+                    "type": "lava",
+                    "x": 3,
+                    "y": 3,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "lava",
+                    "x": 9,
+                    "y": 9,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "lava",
+                    "x": 0,
+                    "y": 0,
+                    "width": 4,
+                    "length": 3
+                },
+                {
+                    "type": "lava",
+                    "x": 12,
+                    "y": 0,
+                    "width": 4,
+                    "length": 4
+                },
+                {
+                    "type": "lava",
+                    "x": 9,
+                    "y": 0,
+                    "width": 3,
+                    "length": 2
+                },
+                {
+                    "type": "lava",
+                    "x": 15,
+                    "y": 4,
+                    "width": 1,
+                    "length": 4
+                },
+                {
+                    "type": "lava",
+                    "x": 0,
+                    "y": 13,
+                    "width": 3,
+                    "length": 3
+                },
+                {
+                    "type": "lava",
+                    "x": 13,
+                    "y": 13,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "lava",
+                    "x": 5,
+                    "y": 5,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "lava",
                     "x": 8,
+                    "y": 8,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "lava",
+                    "x": 7,
+                    "y": 10,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "wall",
+                    "x": 13,
+                    "y": 0,
+                    "width": 3,
+                    "length": 2
+                },
+                {
+                    "type": "wall",
+                    "x": 3,
+                    "y": 9,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "wall",
+                    "x": 2,
+                    "y": 8,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "wall",
+                    "x": 1,
+                    "y": 0,
+                    "width": 5,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 14,
+                    "y": 12,
+                    "width": 2,
+                    "length": 4
+                },
+                {
+                    "type": "victim",
+                    "x": 1,
+                    "y": 4,
+                    "width": 1,
+                    "length": 1
+                },
+                {
+                    "type": "victim",
+                    "x": 9.5,
+                    "y": 11.5,
+                    "width": 1,
+                    "length": 1
+                },
+                {
+                    "type": "exit",
+                    "x": 10,
+                    "y": 14.5,
+                    "width": 1,
+                    "length": 1
+                }
+            ]
+        },
+        {
+            "number": 9,
+            "initialPlayerPosition": {
+                "x": 8,
+                "y": 8,
+                "scale": 0.5
+            },
+            "obstacles": [
+                {
+                    "type": "void",
+                    "x": 0,
+                    "y": 0,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "void",
+                    "x": 3.5,
+                    "y": 0,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "void",
+                    "x": 7,
+                    "y": 0,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "void",
+                    "x": 10.5,
+                    "y": 0,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "void",
+                    "x": 14,
+                    "y": 0,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "void",
+                    "x": 0,
+                    "y": 3.5,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "void",
+                    "x": 3.5,
+                    "y": 3.5,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "void",
+                    "x": 7,
+                    "y": 3.5,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "void",
+                    "x": 10.5,
+                    "y": 3.5,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "void",
+                    "x": 14,
+                    "y": 3.5,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "void",
+                    "x": 0,
+                    "y": 7,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "void",
+                    "x": 3.5,
+                    "y": 7,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "void",
+                    "x": 10.5,
+                    "y": 7,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "void",
+                    "x": 14,
+                    "y": 7,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "void",
+                    "x": 0,
+                    "y": 10.5,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "void",
+                    "x": 3.5,
+                    "y": 10.5,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "void",
+                    "x": 7,
+                    "y": 10.5,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "void",
+                    "x": 10.5,
+                    "y": 10.5,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "void",
+                    "x": 14,
+                    "y": 10.5,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "void",
+                    "x": 0,
+                    "y": 14,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "void",
+                    "x": 3.5,
+                    "y": 14,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "void",
+                    "x": 7,
+                    "y": 14,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "void",
+                    "x": 10.5,
+                    "y": 14,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "void",
+                    "x": 14,
+                    "y": 14,
+                    "width": 2,
+                    "length": 2
+                },
+                {
+                    "type": "victim",
+                    "x": 3,
+                    "y": 9.25,
+                    "width": 1,
+                    "length": 1
+                },
+                {
+                    "type": "victim",
+                    "x": 1.5,
+                    "y": 2.25,
+                    "width": 1,
+                    "length": 1
+                },
+                {
+                    "type": "victim",
+                    "x": 5.75,
+                    "y": 5,
+                    "width": 1,
+                    "length": 1
+                },
+                {
+                    "type": "victim",
+                    "x": 12.75,
+                    "y": 9.25,
+                    "width": 1,
+                    "length": 1
+                },
+                {
+                    "type": "victim",
+                    "x": 7,
+                    "y": 12.75,
+                    "width": 1,
+                    "length": 1
+                },
+                {
+                    "type": "exit",
+                    "x": 12.75,
+                    "y": 14.5,
+                    "width": 1,
+                    "length": 1
+                }
+            ]
+        },
+        {
+            "number": 10,
+            "initialPlayerPosition": {
+                "x": 7,
+                "y": 13,
+                "scale": 0.5
+            },
+            "obstacles": [
+                {
+                    "type": "ice",
+                    "x": 0,
+                    "y": 0,
+                    "width": 16,
+                    "length": 16
+                },
+                {
+                    "type": "void",
+                    "x": 0,
+                    "y": 0,
+                    "width": 16,
+                    "length": 1
+                },
+                {
+                    "type": "void",
+                    "x": 0,
                     "y": 0,
                     "width": 1,
                     "length": 16
                 },
                 {
-                    "type": "wall",
+                    "type": "void",
                     "x": 0,
-                    "y": 8,
+                    "y": 15,
                     "width": 16,
                     "length": 1
                 },
                 {
+                    "type": "void",
+                    "x": 15,
+                    "y": 0,
+                    "width": 1,
+                    "length": 16
+                },
+                {
+                    "type": "void",
+                    "x": 3,
+                    "y": 10,
+                    "width": 2,
+                    "length": 6
+                },
+                {
+                    "type": "void",
+                    "x": 11,
+                    "y": 0,
+                    "width": 1,
+                    "length": 6
+                },
+                {
+                    "type": "void",
+                    "x": 8,
+                    "y": 4,
+                    "width": 5,
+                    "length": 1
+                },
+                {
+                    "type": "void",
+                    "x": 0,
+                    "y": 4,
+                    "width": 6,
+                    "length": 4
+                },
+                {
+                    "type": "mud",
+                    "x": 9,
+                    "y": 9.5,
+                    "width": 3,
+                    "length": 2
+                },
+                {
+                    "type": "void",
+                    "x": 5,
+                    "y": 10,
+                    "width": 5,
+                    "length": 1
+                },
+                {
+                    "type": "wall",
+                    "x": 0,
+                    "y": 5,
+                    "width": 3,
+                    "length": 2
+                },
+                {
+                    "type": "victim",
+                    "x": 2,
+                    "y": 2,
+                    "width": 1,
+                    "length": 1
+                },
+                {
+                    "type": "victim",
+                    "x": 13,
+                    "y": 2,
+                    "width": 1,
+                    "length": 1
+                },
+                {
+                    "type": "victim",
+                    "x": 1.5,
+                    "y": 13.5,
+                    "width": 1,
+                    "length": 1
+                },
+                {
                     "type": "exit",
-                    "x": 14.5,
-                    "y": 14.5,
+                    "x": 5,
+                    "y": 12.5,
                     "width": 1,
                     "length": 1
                 }

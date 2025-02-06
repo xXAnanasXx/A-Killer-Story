@@ -24,6 +24,7 @@ export default class Game {
         this.scoreboard = [];
         this.levelsData = null;
         this.timerRunning = false;
+        this.currentLevel = null;
     }
 
     async init(canvas) {
@@ -70,6 +71,7 @@ export default class Game {
         }
 
         let level = this.levelsData.find(level => level.number === numMap);
+        this.currentLevel = level;
         if (!level) {
             console.error(`Level ${numMap} not found`);
             return;
@@ -269,7 +271,7 @@ export default class Game {
                         case "lava":
                         case "void":
                             // Respawn the player
-                            this.player.respawn(10, 10);
+                            this.player.respawn(this.currentLevel.initialPlayerPosition.x * this.gridRatio, this.currentLevel.initialPlayerPosition.y * this.gridRatio, this.currentLevel.initialPlayerPosition.scale);
                             break;
                         case "mud":
                             // Slow down the player
