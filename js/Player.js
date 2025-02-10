@@ -225,9 +225,10 @@ export default class Player extends ObjectGraphique {
         ctx.restore();
     }
 
-    move() {
-        this.x += this.vitesseX;
-        this.y += this.vitesseY;
+    move(deltaTime) {    
+        let fpsRef = 360.15;    
+        this.x += this.vitesseX * deltaTime * fpsRef;
+        this.y += this.vitesseY * deltaTime * fpsRef;
     }
 
     respawn(x, y, ratio = this.ratio) {

@@ -20,6 +20,10 @@ A-Killer-Story is a web-based project showing the normal life of a killer.
 To play without any contraints go to my web server hosting my game [A-Killer-Story](https://a-killer-story.vercel.app/)
 If the canvas is oversized, don't hesitate to reduce the global window size.
 
+## Disclaimer
+For the best experience, this game is optimized for a frame rate of 360.15 fps. While movement speed is adjusted for compatibility across different configurations, environmental animations may vary.
+
+
 ## Local Installation
 To install and run the project locally, follow these steps:
 

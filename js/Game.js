@@ -121,20 +121,24 @@ export default class Game {
         requestAnimationFrame(this.mainAnimationLoop.bind(this));
     }
 
-    mainAnimationLoop() {
+    mainAnimationLoop(timestamp) {
+        if (!this.lastTime) this.lastTime = timestamp;
+        let deltaTime = (timestamp - this.lastTime) / 1000; // Convertir en secondes
+        this.lastTime = timestamp;
+    
         // 1 - on efface le canvas
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-
+    
         // 2 - on dessine les objets à animer dans le jeu
         this.drawAllObjects();
-
-        // 3 - On regarde l'état du clavier, manette, souris et on met à jour
-        this.update();
-
-        // 4 - on demande au navigateur d'appeler la fonction mainAnimationLoop
-        // à nouveau dans 1/60 de seconde
+    
+        // 3 - On met à jour les objets du jeu avec deltaTime
+        this.update(deltaTime);
+    
+        // 4 - On demande au navigateur d'appeler la fonction mainAnimationLoop à nouveau
         requestAnimationFrame(this.mainAnimationLoop.bind(this));
     }
+    
 
     updateLevel(levelNumber) {
         this.levelElement.textContent = `Level: ${levelNumber}`;
@@ -167,12 +171,12 @@ export default class Game {
         });
     }
 
-    update() {
+    update(deltaTime) {
         // Appelée par mainAnimationLoop
         // donc tous les 1/60 de seconde
 
         // Déplacement du joueur. 
-        this.movePlayer();
+        this.movePlayer(deltaTime);
 
         // on met à jouer la position de objetSouris avec la position de la souris
         // Pour un objet qui "suit" la souris mais avec un temps de retard, voir l'exemple
@@ -186,7 +190,7 @@ export default class Game {
         }
     }
 
-    movePlayer() {
+    movePlayer(deltaTime) {
         this.player.vitesseX = 0;
         this.player.vitesseY = 0;
 
@@ -209,7 +213,7 @@ export default class Game {
             this.startTimer();
         }
 
-        this.player.move();
+        this.player.move(deltaTime);
 
         this.testCollisionsPlayer();
     }
